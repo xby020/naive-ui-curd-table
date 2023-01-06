@@ -1,0 +1,9 @@
+{
+  "name": "@xby020/naive-ui-curd-table",
+  "version": "0.0.1",
+  "description": "Naive UI CURD Table",
+  "main": "main.ts",
+  "scripts": {
+    "build": "vue-tsc --noEmit && vite build"
+  }
+}
