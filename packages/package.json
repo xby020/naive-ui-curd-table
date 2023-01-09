@@ -22,5 +22,10 @@
   ],
   "scripts": {
     "build": "vue-tsc --noEmit && vite build --config ./vite.config.ts"
+  },
+  "devDependencies": {
+    "vite-plugin-libcss": "^1.0.5",
+    "vite-plugin-windicss": "^1.8.10",
+    "windicss": "^3.5.6"
   }
 }

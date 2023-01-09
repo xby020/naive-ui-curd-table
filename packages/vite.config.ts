@@ -1,27 +1,31 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import dts from 'vite-plugin-dts';
 import { resolve } from 'path';
+import dts from 'vite-plugin-dts';
 import WindiCSS from 'vite-plugin-windicss';
+import libCss from 'vite-plugin-libCss';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
-    dts({
-      tsConfigFilePath: resolve(__dirname, '../tsconfig.json')
+    dts(),
+    WindiCSS({
+      scan: {
+        include: ['**/*.vue', '**/*.ts']
+      }
     }),
-    WindiCSS()
+    libCss()
   ],
   build: {
     target: 'modules',
     minify: true,
     lib: {
-      entry: resolve(__dirname, './main.ts'),
+      entry: resolve(__dirname, 'main.ts'),
       name: 'NCurdTable',
       fileName: (format) => `n-curd-table.${format}.js`
     },
-    outDir: resolve(__dirname, '../dist'),
+    outDir: 'dist',
     rollupOptions: {
       external: ['vue'],
       output: {

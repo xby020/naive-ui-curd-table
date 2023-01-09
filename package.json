@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "pnpm run -C example dev",
-    "build": "pnpm run -C packages build"
+    "build": "pnpm run --filter @xby020/naive-ui-curd-table build"
   },
   "dependencies": {
     "vue": "^3.2.45"

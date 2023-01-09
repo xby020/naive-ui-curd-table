@@ -1,12 +1,6 @@
-import { App } from 'vue';
+import { NCurdTablePlugin } from './NCurdTable';
 import 'virtual:windi.css';
 
-import NCurdTable from './src/components/NCurdTable';
+export default NCurdTablePlugin;
 
-export { NCurdTable };
-
-export default {
-  install(app: App) {
-    app.component(NCurdTable.name, NCurdTable);
-  }
-};
+export * from './NCurdTable';
