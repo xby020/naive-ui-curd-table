@@ -1,11 +1,7 @@
 <template>
-  <div>
-    <NCurdTable name="banana" />
-  </div>
+  <div></div>
 </template>
 
-<script setup lang="ts">
-import { NCurdTable } from '@xby020/naive-ui-curd-table';
-</script>
+<script setup lang="ts"></script>
 
 <style scoped></style>

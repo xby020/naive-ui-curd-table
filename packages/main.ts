@@ -1,4 +1,5 @@
 import { App } from 'vue';
+import 'virtual:windi.css';
 
 import NCurdTable from './src/components/NCurdTable';
 

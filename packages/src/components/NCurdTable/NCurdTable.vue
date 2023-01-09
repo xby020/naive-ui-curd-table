@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>NCurdTable</h1>
-    <h2>{{ name }}</h2>
+    <h1 class="text-sky-400 text-3xl font-bold">NCurdTable</h1>
+    <h2 class="bg-green-600 text-light-50">Hi,{{ name }}</h2>
   </div>
 </template>
 

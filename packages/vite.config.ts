@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import dts from 'vite-plugin-dts';
 import { resolve } from 'path';
+import WindiCSS from 'vite-plugin-windicss';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,9 +10,12 @@ export default defineConfig({
     vue(),
     dts({
       tsConfigFilePath: resolve(__dirname, '../tsconfig.json')
-    })
+    }),
+    WindiCSS()
   ],
   build: {
+    target: 'modules',
+    minify: true,
     lib: {
       entry: resolve(__dirname, './main.ts'),
       name: 'NCurdTable',
