@@ -3,23 +3,7 @@
   "version": "0.0.1",
   "description": "Naive UI CURD Table",
   "type": "module",
-  "main": "dist/n-curd-table.es.js",
-  "module": "dist/n-curd-table.es.js",
-  "types": "dist/main.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/n-curd-table.es.js",
-      "require": "./dist/n-curd-table.umd.js"
-    },
-    "./dist/style.css": {
-      "import": "./dist/style.css",
-      "require": "./dist/style.css"
-    }
-  },
-  "files": [
-    "dist",
-    "dist/*.css"
-  ],
+  "main": "./main.ts",
   "scripts": {
     "build": "vue-tsc --noEmit && vite build --config ./vite.config.ts"
   },

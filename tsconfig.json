@@ -9,5 +9,12 @@
     "esModuleInterop": true,
     "moduleResolution": "Node",
     "lib": ["esnext", "dom"]
-  }
+  },
+  "include": [
+    "packages/**/*.ts",
+    "packages/**/*.vue",
+    "example/**/*.ts",
+    "example/**/*.vue",
+    "types/**/*.ts"
+  ]
 }
